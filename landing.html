@@ -1,0 +1,304 @@
+<html >
+<head>
+    <title> mobile shop </title>
+<style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #5c6bc0; /* Updated header background color */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            background-color: #7e57c2; /* Updated nav background color */
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        nav a {
+            display: inline-block;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #ba68c8; /* Updated nav hover background color */
+            color: #000;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Facility Section */
+        .facility {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .facility img {
+            max-width: 200px;
+            border-radius: 8px;
+            margin-right: 2rem;
+        }
+        
+        .facility h2 {
+            color: #5c6bc0; /* Updated facility section heading color */
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .facility p {
+            color: #444;
+            line-height: 1.8;
+        }
+        
+        /* Form Container */
+        .form-container {
+            background: #fff;
+            margin: 1rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-container label {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .form-container input,
+        .form-container textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        .form-container button,
+        .show-form-button {
+            background-color: #5c6bc0; /* Updated form button background color */
+            color: #fff;
+            padding: 0.7rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+        
+        .form-container button:hover,
+        .show-form-button:hover {
+            background-color: #7e57c2; /* Updated form button hover background color */
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        
+        .contact-info a {
+            color: #5c6bc0; /* Updated contact link color */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+            color: #d81b60; /* Updated contact link hover color */
+        }
+        
+        
+        }
+    </style>
+    <script>
+        function toggleForm() {
+            var formContainer = document.getElementById("form-container");
+            if (formContainer.style.display === "none" || formContainer.style.display === "") {
+                formContainer.style.display = "block";
+            } else {
+                formContainer.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>SRI VENKATESHWARA MOBILES</h1>
+    </header>
+    <nav>
+        <a href="#mobile">Mobile Phones</a>
+        <a href="#accessories">Mobile Accessories</a>
+        <a href="#backcase">Back Case</a>
+        <a href="#mobileservices">Mobile Services</a>
+        <a href="#contact-info">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="mobile" class="facility">
+            <img src="mobile.jpeg" alt="mobile phones">
+            <div>
+                <h2>MOBILE PHONES</h2>
+                <p>Design:
+
+The [Brand/Model] has a sleek and ergonomic design that seamlessly fits into your lifestyle. Its [describe specific design elements like slim profile, curved edges, premium materials].
+
+Display:
+
+Dive into the bright [size in inches] display with [resolution details], to see clear images whether you’re watching videos online or just surfing.
+
+Performance:
+
+[Processor Name] runs the [Brand/Model]. This means that it performs tasks at lightning speed. Multitask easily, use heavy applications and play games without any interruption thanks to RAM of [RAM details].
+
+Camera:
+
+Take every moment in great detail through the [number of megapixels] back camera with features such as AI enhancements and night mode among others for better shots. The front camera is equally great having the same number of pixels as above for selfies.
+
+Battery Life:
+
+Now you can stay connected all day long with a battery of [mAh] that promises up to 24 hours on a single charge. That way fast charging technology allows you to spend more time using your phone rather than charging it.
+
+Software:
+
+Get the latest Android/iOS version [version number] powered by AI and supported by Google Assistant/Siri, which provides an intuitive user interface.
+
+Connectivity:
+
+Enjoy high-speed internet provided by the fastest available mobile network technology – 5G/4G thereby ensuring continuous connection wherever you go. Dual SIM capability may be there or not therefore allowing flexibility</p>
+            </div>
+        </section>
+        <section id="accessories" class="facility">
+            <img src="accessories.jpeg" alt="accessories">
+            <div>
+                <h2>ACCESSORIES</h2>
+                <p>Screen Protectors:
+
+Alright, let's talk about screen protectors. These handy accessories are designed to keep your screen safe from scratches, smudges, and minor impacts. There are a few different types to choose from, including tempered glass, PET film, matte finish, and anti-glare options. 
+
+When it comes to features, you'll be happy to know that most screen protectors offer bubble-free installation, high transparency, and an oleophobic coating to resist fingerprints. These features not only help maintain screen clarity but also prolong the life of your screen while reducing those annoying fingerprint smudges.
+
+Power Banks:
+
+Now, let's move on to power banks. These nifty devices provide portable power for charging your smartphones and tablets on-the-go. They come in various capacities, ranging from compact designs with around 2000mAh to high-capacity models with 20000mAh or more.
+
+When it comes to features, you'll find that most power banks offer fast charging capabilities, multiple ports for charging multiple devices at once, and lightweight yet durable designs. These features are perfect for extending your device's usage time and are particularly handy during travel or emergencies.
+
+Wireless Chargers:
+
+Next up, we have wireless chargers. These chargers make your life easier by allowing you to charge your devices wirelessly using electromagnetic induction. You'll find a few different types available, including charging pads, stands, and even car mounts for convenience on the road.
+
+When it comes to features, many wireless chargers are Qi-certified, which means they meet the industry standard for wireless charging. They also offer fast wireless charging capabilities and LED indicators to let you know when your device is charging. With a wireless charger, you can say goodbye to tangled cables and reduce wear on your charging ports.
+
+Bluetooth Headsets and Earphones:
+
+Now, let's dive into Bluetooth headsets and earphones. These wireless audio devices are perfect for hands-free calling and enjoying your favorite music. You'll find a variety of types to suit your preferences, including true wireless earbuds, over-ear headphones, and neckband-style options.
+
+When it comes to features, many Bluetooth headsets and earphones offer noise cancellation for improved call quality and sweat resistance for those intense workouts. Plus, they come with long battery life to keep you entertained throughout the day. With these devices, you'll enjoy improved mobility, better call quality, and an immersive audio experience.
+
+Car Mounts and Holders:
+
+Alright, let's talk about car mounts and holders. These handy accessories securely hold your smartphones in your vehicle, allowing you to navigate and use your phone hands-free. You'll find a few different types available, including dashboard mounts, vent mounts, and magnetic mounts.
+
+When it comes to features, car mounts and holders offer adjustable viewing angles, quick-release mechanisms for easy access to your phone, and strong adhesion to keep your device in place. They are not only practical for safely accessing navigation apps but also help you comply with hands-free laws and prevent distractions on the road.</p>
+            </div>
+        </section>
+        <section id="backcase" class="facility">
+            <img src="backcase.jpeg" alt="backcases">
+            <div>
+                <h2>BACK CASES</h2>
+                <p>Phone Cases and Covers: 
+
+When it comes to protecting your phone, we've got you covered! Our phone cases are designed to keep your device safe from those dreaded scratches, drops, and impacts. 
+
+We offer a wide range of options to suit your style and needs. From rugged cases for the adventurous types, to slim cases for those who prefer a sleek look, we've got something for everyone. And if you're into customization, we've got you covered there too!
+
+Our cases come with some great features that you'll love. With shock absorption technology, you can rest easy knowing that your phone is protected from those accidental drops. The raised edges also provide that extra bit of screen protection, so you can say goodbye to those annoying scratches. And of course, we've made sure to include precise cutouts for all your ports and buttons, so you can access everything without any hassle.
+
+But it's not just about protection, our cases also offer some great benefits. By investing in a quality phone case, you'll be enhancing the durability of your device, which means it'll last longer and stay in better condition. And if you ever decide to sell or upgrade your phone, having a well-protected device can help preserve its resale value. Plus, with our range of designs and styles, you can add a touch of personal style to your phone.</p>
+            </div>
+        </section>
+        <section id="mobileservices" class="facility">
+            <img src="services.jpg" alt="mobileservices">
+            <div>
+                <h2>MOBILE SERVICES</h2>
+                <p>Screen Replacement:
+
+Got a cracked or damaged screen from dropping your device? No worries! We've got you covered. Our expert technicians can repair or replace your screen, making it look good as new.
+
+Battery Replacement:
+
+Is your battery not holding a charge like it used to? Don't sweat it! We can replace your worn-out or faulty battery, so you can enjoy longer battery life and optimal performance.
+
+Charging Port Repair:
+
+Having trouble charging your device or connecting it to charging cables? We're here to help! Our skilled technicians can fix any issues with your charging port, ensuring proper charging and connectivity.
+
+Water Damage Repair:
+
+Did your device take an unexpected dive into water or encounter a liquid spill? We've got the solution! Our team can address all the problems caused by water exposure, including thorough cleaning and component replacement.
+
+Camera Repair:
+
+Blurry photos or glitchy video recordings? Say no more! Our technicians can repair or replace malfunctioning front or rear-facing cameras, so you can capture clear and stunning shots every time.
+
+Button and Switch Repair:
+
+Is your power button, volume button, or home button acting up? Leave it to us! We specialize in fixing non-responsive or stuck buttons, so you can easily navigate your device with no hassle.
+
+Speaker and Microphone Repair:
+
+Having trouble hearing during calls or enjoying your favorite media? We've got your back! Our experts can repair or replace speakers and microphones, ensuring crystal-clear audio quality for your calls, music, and recordings.
+
+Software Troubleshooting:
+
+Dealing with annoying software issues like app crashes or performance slowdowns? Don't worry, we've got the solution! Our skilled technicians can troubleshoot and resolve any software glitches, getting your device back to its smooth and snappy self.
+
+Data Recovery:
+
+Lost important photos, videos, or contacts due to a damaged or malfunctioning device? We understand the struggle. Our team has the expertise to retrieve and recover your precious data, even from the most challenging situations.</p>
+            </div>
+        </section>
+                <div id ="contact-info">
+            <p>Contact Support: <a href="mailto:srivenkateshwaramobiles.com">supportsrivenkateshwaramobiles.com</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;srivenkateshwaramobiles</p>
+    </footer>
+</body>
+</html>
